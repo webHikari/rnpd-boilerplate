@@ -1,0 +1,105 @@
+.DigitsWrapper {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.Digits {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  --stick-width: 120px;
+  --border-radius: .75rem;
+}
+
+.FourDigit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: var(--stick-width) 1fr var(--stick-width);
+}
+
+.FourDigit > div {
+  background: var(--primary-color);
+}
+
+.FourDigitLeftStick {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  height: calc(50% + calc(var(--stick-width) / 2)); 
+}
+
+.FourDigitCenterStick {
+  align-self: center;
+  height: var(--stick-width);
+}
+
+.FourDigitRightStick {
+  border-radius: var(--border-radius);
+  height: 100%; 
+}
+
+.ZeroDigit {
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: var(--text-0);
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ZeroDigit h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  color: var(--text-200);
+}
+
+.ZeroDigit p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.SuggestionsContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Suggestion {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.Suggestion:hover {
+  transform: translateY(-3px);
+}
+
+.Suggestion h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text-100);
+}
+
+.Suggestion a {
+  display: inline-block;
+  background: var(--background-0);
+  color: var(--text-100);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.Suggestion a:hover {
+  background: var(--background-200);
+  color: var(--text-200);
+}

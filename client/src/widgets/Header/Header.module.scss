@@ -1,0 +1,66 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.Header nav {
+  display: flex;
+  gap: 0.5rem;
+
+  padding: 0 1rem;
+  border-radius: 5rem;
+
+  background: var(--background-100);
+  border: 1px solid var(--background-300);
+}
+
+
+.NavLinkActive {
+  color: var(--text-200);
+  padding: 0.33rem;
+}
+
+.NavLinkActive:hover {
+  color: var(--text-200);
+}
+
+.NavLink {
+  padding: 0.33rem;
+  color: var(--text-0);
+}
+
+.NavLink:hover {
+  color: var(--text-100);
+}
+
+.WorldIcon {
+  font-size: 24px;
+  background: var(--primary-color);
+  color: var(--text-100);
+  padding: 0.1rem;
+  border-radius: 0.35rem;
+}
+
+.LogoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-100);
+}
+
+.LogoLink:hover {
+  color: var(--text-100);
+}
+
+.SuperLink {
+  background: var(--primary-color);
+  color: var(--text-200);
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+}
+
+.SuperLink:hover {
+  color: var(--text-200);
+}
