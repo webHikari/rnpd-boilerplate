@@ -35,8 +35,8 @@ export const Header = () => {
 			</div>
 			<nav>
 				<HeaderLink path="/">Home</HeaderLink>
-				<HeaderLink path="/">About us</HeaderLink>
-				<HeaderLink path="/">Privacy Policy</HeaderLink>
+				<HeaderLink path="/about">About us</HeaderLink>
+				<HeaderLink path="/privacy">Privacy Policy</HeaderLink>
 				<HeaderLink path="/">Support</HeaderLink>
 				<HeaderLink path="/404">404</HeaderLink>
 			</nav>
